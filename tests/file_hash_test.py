@@ -1,5 +1,5 @@
 import unittest
-from media2nft.converter import FileHasher
+from media2nft.converters import FileHasher
 
 
 class FileHashTest(unittest.TestCase):
