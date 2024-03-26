@@ -1,0 +1,3 @@
+class GasLimit:
+    DEFAULT_TEST_GAS_LIMIT = '0x1C9C380'
+    DEFAULT_GAS_LIMIT = '0x1C9C380'
