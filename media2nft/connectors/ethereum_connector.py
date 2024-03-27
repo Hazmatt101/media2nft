@@ -19,6 +19,9 @@ class EthereumConnector:
     def is_connected(self):
         return self.web3_instance.is_connected(show_traceback=True)
 
+    def create_eth_account(self):
+        return self.web3_instance.eth.account.create()
+
     def create_transaction(self, smart_contract_address, address_sending, gas_limit, gas_price, function_data):
         # Check address checksum
         if not self.web3_instance.to_checksum_address(smart_contract_address.lower()):
